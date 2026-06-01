@@ -1,0 +1,8 @@
+{
+  "name": "Mental Health Management System",
+  "description": "A comprehensive mental health and emotional wellness platform featuring an AI support companion, mood analytics, gamified wellness milestones, self-care guided breathing, secure therapist booking, and roles-based dashboards.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

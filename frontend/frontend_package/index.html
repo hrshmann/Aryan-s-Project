@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mental Health Care</title>
+    <script>
+      // Silence expected sandbox container WebSocket and Hot Module Replacement proxy disconnect notices
+      (function() {
+        const checkBenignWS = (err) => {
+          if (!err) return false;
+          const msg = (err.message || String(err)).toLowerCase();
+          return (
+            msg.indexOf('websocket') !== -1 ||
+            msg.indexOf('websocket closed without opened') !== -1 ||
+            msg.indexOf('connection closed') !== -1
+          );
+        };
+
+        window.addEventListener('unhandledrejection', function(event) {
+          if (checkBenignWS(event.reason) || (event.reason && checkBenignWS(event.reason.message))) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+        }, true);
+
+        window.addEventListener('error', function(event) {
+          if (checkBenignWS(event.message) || checkBenignWS(event.error)) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+        }, true);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

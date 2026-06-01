@@ -1,0 +1,203 @@
+{
+  "users": [
+    {
+      "_id": "admin-id-123",
+      "id": "admin-id-123",
+      "name": "Priya Sharma",
+      "email": "admin@mindhaven.in",
+      "password": "$2b$10$CoYTinvz0IcHzPwnQK19..Qz8zAQnZKZ5f6f6feOg3J3y48yd2J4.",
+      "role": "Admin",
+      "age": 34,
+      "points": 450,
+      "level": 3,
+      "badges": [
+        "first-breath",
+        "self-care-champion",
+        "zen-master"
+      ],
+      "createdAt": "2026-05-28T13:31:28.874Z"
+    },
+    {
+      "_id": "therapist-id-1",
+      "id": "therapist-id-1",
+      "name": "Dr. Aditi Sharma",
+      "email": "aditi.specialist@mindhaven.in",
+      "password": "$2b$10$bIsmgsqpouOphl7YtiKta.ApaVfxkTI5bYNqIaY9LPnrtyKPk94ya",
+      "role": "Therapist",
+      "age": 41,
+      "points": 120,
+      "level": 1,
+      "badges": [],
+      "createdAt": "2026-05-28T13:31:28.976Z"
+    }
+  ],
+  "therapists": [
+    {
+      "id": "therapist-id-1",
+      "name": "Dr. Aditi Sharma",
+      "email": "aditi.specialist@mindhaven.in",
+      "specialty": "Cognitive Behavioral Therapy (CBT)",
+      "experience": 12,
+      "rating": 4.9,
+      "bio": "Dr. Sharma specializes in anxiety and depression care through collaborative CBT sessions for students, working professionals, and families across India.",
+      "imgUrl": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=300",
+      "availability": [
+        "Mon 09:00 AM IST",
+        "Mon 02:00 PM IST",
+        "Wed 11:00 AM IST",
+        "Fri 03:00 PM IST"
+      ],
+      "pricePerSession": 1500,
+      "approved": true
+    },
+    {
+      "id": "therapist-id-2",
+      "name": "Dr. Arjun Mehta",
+      "email": "arjun.mbsr@mindhaven.in",
+      "specialty": "Mindfulness-Based Stress Reduction (MBSR)",
+      "experience": 15,
+      "rating": 4.8,
+      "bio": "Dr. Mehta combines mindfulness, yoga-informed stress reduction, and contemporary psychology to support resilience and emotional regulation.",
+      "imgUrl": "https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&q=80&w=300",
+      "availability": [
+        "Tue 10:00 AM IST",
+        "Tue 04:00 PM IST",
+        "Thu 01:00 PM IST",
+        "Thu 06:00 PM IST"
+      ],
+      "pricePerSession": 1800,
+      "approved": true
+    },
+    {
+      "id": "therapist-id-3",
+      "name": "Dr. Nisha Rao",
+      "email": "nisha.relationships@mindhaven.in",
+      "specialty": "Family & Relationship Systems",
+      "experience": 8,
+      "rating": 4.7,
+      "bio": "Dr. Rao works with couples, young adults, and families navigating relationship stress, emotional expression, and life transitions.",
+      "imgUrl": "https://images.unsplash.com/photo-1594824813573-246434de83fb?auto=format&fit=crop&q=80&w=300",
+      "availability": [
+        "Wed 09:00 AM IST",
+        "Wed 03:00 PM IST",
+        "Fri 10:00 AM IST",
+        "Fri 01:00 PM IST"
+      ],
+      "pricePerSession": 1400,
+      "approved": true
+    },
+    {
+      "id": "therapist-id-4",
+      "name": "Dr. Kabir Menon",
+      "email": "kabir.neuro@mindhaven.in",
+      "specialty": "Neuropsychiatry & Insomnia Therapy",
+      "experience": 18,
+      "rating": 5,
+      "bio": "Dr. Menon is a clinical psychiatrist focused on anxiety, sleep-wake cycles, workplace burnout, and mood stability.",
+      "imgUrl": "https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=300",
+      "availability": [
+        "Mon 11:00 AM IST",
+        "Wed 05:00 PM IST",
+        "Thu 09:00 AM IST",
+        "Fri 04:00 PM IST"
+      ],
+      "pricePerSession": 2500,
+      "approved": false
+    }
+  ],
+  "appointments": [
+    {
+      "id": "appt-1",
+      "userId": "user-id-sample",
+      "userName": "Rahul Verma",
+      "therapistId": "therapist-id-1",
+      "therapistName": "Dr. Aditi Sharma",
+      "date": "2026-05-24",
+      "time": "2:00 PM",
+      "status": "Confirmed",
+      "notes": "Feeling anxious about a new promotion.",
+      "createdAt": "2026-05-28T13:31:28.976Z"
+    }
+  ],
+  "moods": [
+    {
+      "id": "mood-1",
+      "userId": "admin-id-123",
+      "score": 4,
+      "note": "Started the day with mindfulness and green tea. Felt very productive.",
+      "tags": [
+        "Calm",
+        "Focused"
+      ],
+      "date": "2026-05-20",
+      "createdAt": "2026-05-28T13:31:28.976Z"
+    },
+    {
+      "id": "mood-2",
+      "userId": "admin-id-123",
+      "score": 3,
+      "note": "A bit tired in the afternoon but maintained steady breathing.",
+      "tags": [
+        "Tired",
+        "Calm"
+      ],
+      "date": "2026-05-21",
+      "createdAt": "2026-05-28T13:31:28.976Z"
+    }
+  ],
+  "feedback": [
+    {
+      "id": "feed-1",
+      "name": "Ananya Iyer",
+      "email": "ananya@gmail.com",
+      "message": "The breathing animation is so soothing! Helps me catch my breath during panic sessions.",
+      "rating": 5,
+      "createdAt": "2026-05-28T13:31:28.976Z"
+    }
+  ],
+  "emergencyContacts": [
+    {
+      "name": "Tele-MANAS Mental Health Support",
+      "phone": "14416 or 1-800-891-4416",
+      "description": "Government of India mental health support line available across states and union territories.",
+      "region": "India"
+    },
+    {
+      "name": "KIRAN Mental Health Rehabilitation Helpline",
+      "phone": "1800-599-0019",
+      "description": "National mental health rehabilitation helpline for emotional support and guidance.",
+      "region": "India"
+    },
+    {
+      "name": "AASRA Suicide Prevention Helpline",
+      "phone": "91-22-2754-6669",
+      "description": "Confidential crisis intervention support for people experiencing suicidal thoughts.",
+      "region": "India"
+    },
+    {
+      "name": "National Emergency Response",
+      "phone": "112",
+      "description": "All-in-one emergency response number for immediate safety, police, fire, or medical emergencies.",
+      "region": "India"
+    },
+    {
+      "name": "Women Helpline",
+      "phone": "181",
+      "description": "Support line for women in distress and domestic safety concerns.",
+      "region": "India"
+    }
+  ],
+  "blogs": [
+    {
+      "id": "blog-1",
+      "title": "The Neurobiology of Diaphragmatic Breath Cycles",
+      "category": "Mindfulness",
+      "summary": "Understand how deep, structured breathing directly cues the vagus nerve to shut off the sympathetic nervous system.",
+      "duration": "4 min read",
+      "imageUrl": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=400",
+      "content": "Diaphragmatic breathing engages the large sheet of muscle beneath your lungs. When you take deep, slow inhalations, you trigger the vagus nerve. The vagus nerve is the main line of communication for your Parasympathetic Nervous System (PNS)—the 'Rest and Digest' network.",
+      "author": "Dr. Aditi Sharma",
+      "createdAt": "2026-05-28T13:31:28.976Z"
+    }
+  ]
+}
